@@ -4,15 +4,19 @@
 <?import javafx.scene.layout.*?>
 
 <VBox xmlns:fx="http://javafx.com/fxml"
+      stylesheets="/style/style.css"
       fx:controller="daw.code.controller.GestionViajesController"
       spacing="10"
-      alignment="CENTER">
+      alignment="CENTER"
+      styleClass="container">
 
     <Label text="GESTIÓN DE VIAJES"/>
     <Label text="Tu organizador personal de escapadas"/>
 
+    <HBox>
     <Button text="Crear viaje" onAction="#crearViaje"/>
     <Button text="Filtrar por estado" onAction="#filtrarPorEstado"/>
+    </HBox>
 
     <TableView fx:id="tablaViajes" VBox.vgrow="ALWAYS">
         <columns>
