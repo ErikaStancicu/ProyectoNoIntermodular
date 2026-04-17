@@ -14,6 +14,17 @@ public class GestionViajesController {
     @FXML private TableColumn<GestionViajes, String> colDestino;
     @FXML private TableColumn<GestionViajes, LocalDate> colFechaInicio;
     @FXML private TableColumn<GestionViajes, LocalDate> colFechaFin;
-    @FXML private TableColumn<GestionViajes, Integer> colPresupuesto;
-    @FXML private TableColumn<GestionViajes, String> colEstado;
+    @FXML private TableColumn<GestionViajes, Double> colPresupuesto;
+    @FXML private TableColumn<GestionViajes, Boolean> colEstado;
+
+    @FXML
+    private void crearViaje() {
+        // código
+    }
+
+    @FXML
+    private void filtrarPorEstado() {
+        // código
+    }
+
 }

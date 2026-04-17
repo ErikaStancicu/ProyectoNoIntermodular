@@ -11,16 +11,16 @@
     <Label text="GESTIÓN DE VIAJES"/>
     <Label text="Tu organizador personal de escapadas"/>
 
-    <Button text="Crear viaje"/>
-    <Button text="Filtrar por estado"/>
+    <Button text="Crear viaje" onAction="#crearViaje"/>
+    <Button text="Filtrar por estado" onAction="#filtrarPorEstado"/>
 
     <TableView fx:id="tablaViajes" VBox.vgrow="ALWAYS">
         <columns>
             <TableColumn fx:id="colDestino" text="Destino"/>
-            <TableColumn fx:id="colFechaInicio" date="Fecha inicio"/>
-            <TableColumn fx:id="colFechaFin" date="Fecha fin"/>
-            <TableColumn fx:id="colPresupuesto" double="Presupuesto"/>
-            <TableColumn fx:id="colEstado" boolean="Estado del viaje"/>
+            <TableColumn fx:id="colFechaInicio" text="Fecha inicio"/>
+            <TableColumn fx:id="colFechaFin" text="Fecha fin"/>
+            <TableColumn fx:id="colPresupuesto" text="Presupuesto"/>
+            <TableColumn fx:id="colEstado" text="Estado del viaje"/>
         </columns>
     </TableView>
 
