@@ -4,7 +4,7 @@
 <?import javafx.scene.layout.*?>
 
 <VBox xmlns:fx="http://javafx.com/fxml"
-      stylesheets="/style/style.css"
+      stylesheets="/style/style_principal.css"
       fx:controller="daw.code.controller.GestionViajesController"
       spacing="10"
       alignment="CENTER"
@@ -14,8 +14,8 @@
     <Label text="Tu organizador personal de escapadas"/>
 
     <HBox>
-    <Button text="Crear viaje" onAction="#crearViaje"/>
-    <Button text="Filtrar por estado" onAction="#filtrarPorEstado"/>
+        <Button text="Crear viaje" onAction="#abrirCrearViaje" fx:id="btnCrearViaje"/>
+        <ComboBox fx:id="filtrarPorEstado" promptText="Filtrar por estado" />
     </HBox>
 
     <TableView fx:id="tablaViajes" VBox.vgrow="ALWAYS">

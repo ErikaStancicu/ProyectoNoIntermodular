@@ -8,11 +8,11 @@ public class GestionViajes {
     private LocalDate FechaInicio;
     private LocalDate FechaFin;
     private double Presupuesto;
-    private boolean Estado;
+    private String Estado;
 
-    public GestionViajes(LocalDate fechaInicio, String destino, LocalDate fechaFin, double presupuesto, boolean estado) {
-        FechaInicio = fechaInicio;
+    public GestionViajes(String destino, LocalDate fechaInicio, LocalDate fechaFin, double presupuesto, String estado) {
         Destino = destino;
+        FechaInicio = fechaInicio;
         FechaFin = fechaFin;
         Presupuesto = presupuesto;
         Estado = estado;
@@ -50,11 +50,11 @@ public class GestionViajes {
         Presupuesto = presupuesto;
     }
 
-    public boolean isEstado() {
+    public String getEstado() {
         return Estado;
     }
 
-    public void setEstado(boolean estado) {
+    public void setEstado(String estado) {
         Estado = estado;
     }
 }
