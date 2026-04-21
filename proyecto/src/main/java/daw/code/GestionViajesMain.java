@@ -14,8 +14,8 @@ public class GestionViajesMain extends Application {
         Parent root = loader.load();
 
         stage.setScene(new Scene(root));
-        stage.setWidth(500);
-        stage.setHeight(500);
+        stage.setWidth(1050);
+        stage.setHeight(650);
         stage.setResizable(false);
         stage.setTitle("Proyecto No Intermodular");
         stage.show();

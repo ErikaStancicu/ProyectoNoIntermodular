@@ -6,26 +6,28 @@
 <VBox xmlns:fx="http://javafx.com/fxml"
       stylesheets="/style/style_principal.css"
       fx:controller="daw.code.controller.GestionViajesController"
-      spacing="10"
-      alignment="CENTER"
+      spacing="18"
+      alignment="TOP_CENTER"
       styleClass="container">
 
-    <Label text="GESTIÓN DE VIAJES"/>
-    <Label text="Tu organizador personal de escapadas"/>
+    <VBox alignment="CENTER" spacing="4">
+        <Label text="GESTIÓN DE VIAJES" styleClass="titulo-principal"/>
+        <Label text="Tu organizador personal de escapadas" styleClass="subtitulo"/>
+    </VBox>
 
-    <HBox>
+    <HBox spacing="25" alignment="CENTER">
         <Button text="Crear viaje" onAction="#abrirCrearViaje" fx:id="btnCrearViaje"/>
-        <ComboBox fx:id="filtrarPorEstado" promptText="Filtrar por estado" />
+        <ComboBox fx:id="filtrarPorEstado" promptText="Filtrar por estado"/>
     </HBox>
 
-    <TableView fx:id="tablaViajes" VBox.vgrow="ALWAYS">
+    <TableView fx:id="tablaViajes" VBox.vgrow="ALWAYS" prefWidth="920" prefHeight="420">
         <columns>
-            <TableColumn fx:id="colDestino" text="Destino"/>
-            <TableColumn fx:id="colFechaInicio" text="Fecha inicio"/>
-            <TableColumn fx:id="colFechaFin" text="Fecha fin"/>
-            <TableColumn fx:id="colPresupuesto" text="Presupuesto"/>
-            <TableColumn fx:id="colEstado" text="Estado del viaje"/>
+            <TableColumn fx:id="colDestino" text="Destino" prefWidth="120"/>
+            <TableColumn fx:id="colFechaInicio" text="Fecha inicio" prefWidth="110"/>
+            <TableColumn fx:id="colFechaFin" text="Fecha fin" prefWidth="110"/>
+            <TableColumn fx:id="colPresupuesto" text="Presupuesto" prefWidth="110"/>
+            <TableColumn fx:id="colEstado" text="Estado del viaje" prefWidth="150"/>
+            <TableColumn fx:id="colAcciones" text="Acciones" prefWidth="160"/>
         </columns>
     </TableView>
-
 </VBox>

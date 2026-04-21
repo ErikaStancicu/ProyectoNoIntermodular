@@ -20,5 +20,4 @@
 
     <Button text="Guardar" onAction="#guardarViaje" fx:id="btnGuardar"/>
     <Button text="Cancelar" onAction="#cancelar" fx:id="btnCancelar"/>
-
 </VBox>
