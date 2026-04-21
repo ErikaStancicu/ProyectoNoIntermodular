@@ -20,14 +20,14 @@
         <ComboBox fx:id="filtrarPorEstado" promptText="Filtrar por estado"/>
     </HBox>
 
-    <TableView fx:id="tablaViajes" VBox.vgrow="ALWAYS" prefWidth="920" prefHeight="420">
+    <TableView fx:id="tablaViajes" VBox.vgrow="ALWAYS" prefWidth="900" prefHeight="400">
         <columns>
-            <TableColumn fx:id="colDestino" text="Destino" prefWidth="120"/>
-            <TableColumn fx:id="colFechaInicio" text="Fecha inicio" prefWidth="110"/>
-            <TableColumn fx:id="colFechaFin" text="Fecha fin" prefWidth="110"/>
-            <TableColumn fx:id="colPresupuesto" text="Presupuesto" prefWidth="110"/>
-            <TableColumn fx:id="colEstado" text="Estado del viaje" prefWidth="150"/>
-            <TableColumn fx:id="colAcciones" text="Acciones" prefWidth="160"/>
+            <TableColumn fx:id="colDestino" text="Destino" prefWidth="100"/>
+            <TableColumn fx:id="colFechaInicio" text="Fecha inicio" prefWidth="100"/>
+            <TableColumn fx:id="colFechaFin" text="Fecha fin" prefWidth="100"/>
+            <TableColumn fx:id="colPresupuesto" text="Presupuesto" prefWidth="100"/>
+            <TableColumn fx:id="colEstado" text="Estado del viaje" prefWidth="100"/>
+            <TableColumn fx:id="colAcciones" text="Acciones" prefWidth="200"/>
         </columns>
     </TableView>
 </VBox>

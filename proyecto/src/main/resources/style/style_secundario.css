@@ -1,0 +1,64 @@
+.root {
+    -fx-font-family: "Segoe UI";
+}
+
+.container {
+    -fx-background-color: linear-gradient(to bottom right, #f8fbff, #eef5ff);
+    -fx-padding: 30;
+    -fx-spacing: 18;
+}
+
+.titulo-principal {
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1f3b73;
+}
+
+.subtitulo {
+    -fx-font-size: 16px;
+    -fx-text-fill: #5f7399;
+    -fx-padding: 0 0 8 0;
+}
+
+.text-field,
+.date-picker,
+.combo-box {
+    -fx-pref-width: 260;
+    -fx-max-width: 260;
+    -fx-pref-height: 42;
+    -fx-background-color: white;
+    -fx-border-color: #c7d8ef;
+    -fx-border-radius: 14;
+    -fx-background-radius: 14;
+    -fx-padding: 8 12;
+    -fx-font-size: 14px;
+    -fx-text-fill: #243447;
+}
+
+#btnGuardar,
+#btnCancelar {
+    -fx-text-fill: #1f3b73;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 14;
+    -fx-padding: 10 20;
+    -fx-pref-width: 130;
+    -fx-pref-height: 40;
+    -fx-cursor: hand;
+}
+
+#btnGuardar {
+    -fx-background-color: #b7d4ff;
+}
+
+#btnGuardar:hover {
+    -fx-background-color: #9fc5ff;
+}
+
+#btnCancelar {
+    -fx-background-color: #dceaff;
+}
+
+#btnCancelar:hover {
+    -fx-background-color: #c7dcff;
+}

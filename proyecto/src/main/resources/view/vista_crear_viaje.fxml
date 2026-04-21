@@ -6,11 +6,15 @@
 <VBox xmlns:fx="http://javafx.com/fxml"
       stylesheets="/style/style_secundario.css"
       fx:controller="daw.code.controller.CrearViajeController"
-      spacing="10"
-      alignment="CENTER"
+      spacing="18"
+      alignment="TOP_CENTER"
+      fillWidth="false"
       styleClass="container">
 
-    <Label text="CREA TU VIAJE"/>
+    <VBox alignment="CENTER" spacing="4">
+        <Label text="CREA TU VIAJE" styleClass="titulo-principal"/>
+        <Label text="Completa los datos de tu escapada" styleClass="subtitulo"/>
+    </VBox>
 
     <TextField fx:id="txtDestino" promptText="Destino"/>
     <DatePicker fx:id="dpFechaInicio"/>
@@ -18,6 +22,8 @@
     <TextField fx:id="txtPresupuesto" promptText="Presupuesto"/>
     <ComboBox fx:id="cbEstado" promptText="Estado"/>
 
-    <Button text="Guardar" onAction="#guardarViaje" fx:id="btnGuardar"/>
-    <Button text="Cancelar" onAction="#cancelar" fx:id="btnCancelar"/>
+    <HBox spacing="20" alignment="CENTER">
+        <Button text="Guardar" onAction="#guardarViaje" fx:id="btnGuardar"/>
+        <Button text="Cancelar" onAction="#cancelar" fx:id="btnCancelar"/>
+    </HBox>
 </VBox>
